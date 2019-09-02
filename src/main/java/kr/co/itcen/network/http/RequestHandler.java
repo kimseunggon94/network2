@@ -23,6 +23,7 @@ public class RequestHandler extends Thread {
 	
 	@Override
 	public void run() {
+		System.out.println(documentRoot);
 		try {
 			// get IOStream
 			OutputStream outputStream = socket.getOutputStream();
@@ -93,7 +94,7 @@ public class RequestHandler extends Thread {
 			url = "/index.html";
 		}
 		
-		File file = new File("./webapp" + url);
+		File file = new File(documentRoot+ url);
 		if(file.exists() == false) {
 			consoleLog("File Not Found:" + url);
 			//response404Error(outputStream, tokens[2]);
