@@ -11,14 +11,13 @@ public class SimpleHttpServer {
 	public static void main(String[] args) {
 
 		ServerSocket serverSocket = null;
-		System.out.println("1111111111111111111");
 		try {
 			// 1. Create Server Socket
 			serverSocket = new ServerSocket();
 			   
 			// 2. Bind
 			// String localhost = InetAddress.getLocalHost().getHostAddress();
-			String localhost = "192.168.1.118";
+			String localhost = "0.0.0.0";
 			serverSocket.bind( new InetSocketAddress( localhost, PORT ) );
 			consolLog("bind " + localhost + ":" + PORT);
 
