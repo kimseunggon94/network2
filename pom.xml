@@ -6,7 +6,7 @@
 	<artifactId>network2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-<properties>
+	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -16,7 +16,7 @@
 	<build>
 		<sourceDirectory>src/main/java</sourceDirectory>
 		<resources>
-		<resource>
+			<resource>
 				<directory>${project.basedir}/src/main/resources</directory>
 				<excludes>
 					<exclude>**/*.java</exclude>
@@ -30,7 +30,7 @@
 				<configuration>
 					<encoding>UTF-8</encoding>
 				</configuration>
-			</plugin>		
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
