@@ -18,7 +18,7 @@ public class SimpleHttpServer {
 			   
 			// 2. Bind
 			// String localhost = InetAddress.getLocalHost().getHostAddress();
-			String localhost = "0.0.0.0";
+			String localhost = "192.168.1.118";
 			serverSocket.bind( new InetSocketAddress( localhost, PORT ) );
 			consolLog("bind " + localhost + ":" + PORT);
 
